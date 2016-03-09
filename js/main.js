@@ -9,12 +9,18 @@ function submit() {
       nisn = $('#better_day').val(),
       tingkat_sekolah = $('#dj').val();
 
-  // Send data to firebase
-  ref.push().set({
-    nama: nama,
-    kelas: kelas,
-    sekolah: sekolah,
-    nisn: nisn,
-    tingkat_sekolah: tingkat_sekolah
-  });
+  // Required input
+  var input = $('.input').val();
+  if (input == '') {
+    alert('Please insert input');
+  } else {
+    // Send data to firebase
+    ref.push().set({
+      nama: nama,
+      kelas: kelas,
+      sekolah: sekolah,
+      nisn: nisn,
+      tingkat_sekolah: tingkat_sekolah
+    });
+  }
 }
