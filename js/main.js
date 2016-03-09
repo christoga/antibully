@@ -1,14 +1,26 @@
 function submit() {
+  // Firebase
   var ref = new Firebase("https://anti-bully.firebaseio.com");
-  var nama = $('#broken').val();
-  var kelas = $('#arrows').val();
-  var sekolah = $('#avicii').val();
-  var tipe_sekolah = $('#dj').val();
 
-  ref.push().set({
-    nama: nama,
-    kelas: kelas,
-    sekolah: sekolah,
-    tipe_sekolah: tipe_sekolah
-  });
+  // Input value
+  var nama = $('#broken').val(),
+      kelas = $('#arrows').val(),
+      sekolah = $('#avicii').val(),
+      nisn = $('#better_day').val(),
+      tingkat_sekolah = $('#dj').val();
+
+  // Required input
+  var input = $('.input').val();
+  if (input == '') {
+    alert('Please insert input');
+  } else {
+    // Send data to firebase
+    ref.push().set({
+      nama: nama,
+      kelas: kelas,
+      sekolah: sekolah,
+      nisn: nisn,
+      tingkat_sekolah: tingkat_sekolah
+    });
+  }
 }
