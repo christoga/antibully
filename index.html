@@ -10,8 +10,11 @@
 
     <!-- Flat UI -->
     <link href="css/flat-ui.min.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Costum CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -19,13 +22,14 @@
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body><br>
     <div class="container">
-        <div class="dj">
-          <input type="text" placeholder="Nama" id="broken">
-          <input type="text" placeholder="Kelas" id="arrows">
-          <input type="text" placeholder="Sekolah" id="avicii">
-          <input type="text" placeholder="Tipe Sekolah" value="SD/SMP/SMA" id="electric">
+        <div class="dj" align="center">
+          <input type="text" placeholder="Nama" id="broken" class="form-control"><br>
+          <input type="number" placeholder="Kelas" id="arrows" class="form-control"><br>
+          <input type="text" placeholder="Sekolah" id="avicii" class="form-control"><br>
+          <input type="text" placeholder="Tipe Sekolah" id="dj" class="form-control"><br>
+          <button type="button" class="btn btn-info" onclick="submit()">Submit</button>
         </div>
     </div>
 
@@ -35,5 +39,7 @@
     <script src="js/flat-ui.min.js"></script>
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <!-- Costum JS -->
+    <script src="js/main.js"></script>
   </body>
 </html>
