@@ -31,5 +31,6 @@ function submit() {
       nisn: nisn,
       tingkat_sekolah: tingkat_sekolah
     });
+    window.location.href = 'sukses.html';
   }
 }
