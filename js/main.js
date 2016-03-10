@@ -11,13 +11,18 @@ function submit() {
       nisn = $("#nisn").val(),
       kode_pos = $('#kode_pos').val(),
       sekolah = $('#sekolah').val(),
-      tingkat_sekolah = $('#tingkat').val();
+      tingkat_sekolah = $('#tingkat').val(),
+      masalah = $('#masalah').val();
 
   // Required input
   var input = $('.input').val();
   if (input == '') {
     alert('Please insert input');
-  } else {
+  }
+  else if (masalah.length < 50 ){
+    alert('Please write a sentence more than 50 characters')
+  }
+  else {
     // Send data to firebase
     ref.push().set({
       nama: nama,
@@ -28,7 +33,8 @@ function submit() {
       nisn: nisn,
       kode_pos: kode_pos,
       sekolah: sekolah,
-      tingkat_sekolah: tingkat_sekolah
+      tingkat_sekolah: tingkat_sekolah,
+      masalah: masalah
     });
     alert('Terima kasih telah menjadi anti-bully hero. Kami akan menindaklanjuti laporanmu.');
   }
