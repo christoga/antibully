@@ -30,6 +30,6 @@ function submit() {
       sekolah: sekolah,
       tingkat_sekolah: tingkat_sekolah
     });
-    window.location.href = 'sukses.html';
+    alert('Terima kasih telah menjadi anti-bully hero. Kami akan menindaklanjuti laporanmu.');
   }
 }
