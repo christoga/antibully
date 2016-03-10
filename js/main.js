@@ -28,7 +28,6 @@ function submit() {
       nisn: nisn,
       kode_pos: kode_pos,
       sekolah: sekolah,
-      nisn: nisn,
       tingkat_sekolah: tingkat_sekolah
     });
     window.location.href = 'sukses.html';
