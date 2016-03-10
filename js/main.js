@@ -18,9 +18,11 @@ function submit() {
   var input = $('.input').val();
   if (input == '') {
     alert('Please insert input');
+    return false;
   }
   else if (masalah.length < 50 ){
     alert('Please write a sentence more than 50 characters')
+    return false;
   }
   else {
     // Send data to firebase
@@ -37,5 +39,6 @@ function submit() {
       masalah: masalah
     });
     alert('Terima kasih telah menjadi anti-bully hero. Kami akan menindaklanjuti laporanmu.');
+    return true;
   }
 }
