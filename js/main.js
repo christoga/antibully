@@ -17,6 +17,7 @@ function submit() {
   // Required input
   var input = $('.input').val();
   if (input == '') {
+    // Input cannot be empty
     alert('Please insert input');
     return false;
   }
