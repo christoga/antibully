@@ -33,7 +33,12 @@
           <input type="number" placeholder="NISN" id="nisn" class="form-control"><br>
           <input type="number" placeholder="Kode Pos" id="kode_pos" class="form-control input"><br>
           <input type="text" placeholder="Sekolah" id="sekolah" class="form-control input"><br>
-          <input type="text" placeholder="Tingkatan Sekolah" id="tingkat" class="form-control input"><br>
+          <select class="form-control" id="tingkat">
+            <option disabled>Tingkatan Sekolah</option>
+            <option value="sd">SD</option>
+            <option value="smp">SMP</option>
+            <option value="sma">SMA</option>
+          </select><br>
           <textarea maxlength="150" placeholder="Jelaskan masalahmu" id="masalah" class="form-control"></textarea><br>
           <button type="button" class="btn btn-info" onclick="submit()">Submit</button>
         </div>
