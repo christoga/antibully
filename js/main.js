@@ -27,6 +27,17 @@ function submit() {
     return false;
   }
   else {
+    // Log input value for testing
+    console.log('Nama: ' + nama);
+    console.log('Kepala Sekolah: ' + kepala_sekolah);
+    console.log('No Telp: ' + no_telp);
+    console.log('Alamat: ' + alamat_sekolah);
+    console.log('Kelas:' + kelas);
+    console.log('NISN: ' + nisn);
+    console.log('Kode Pos: ' + kode_pos);
+    console.log('Sekolah: ' + sekolah);
+    console.log('Tingkat Sekolah: ' + tingkat_sekolah);
+    console.log('Masalah: ' + masalah);
     // Send data to firebase
     ref.push().set({
       nama: nama,
