@@ -22,7 +22,7 @@ function submit() {
     return false;
   }
   else if (masalah.length < 50 ){
-    // Textare content cannot be less than 50
+    // Textarea content cannot be less than 50
     alert('Please write a sentence more than 50 characters')
     return false;
   }
