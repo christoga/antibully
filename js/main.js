@@ -1,3 +1,7 @@
+/*
+* Anti-Bully v1.0
+* Copyright 2016 Anti-Bully
+*/
 function submit() {
   // Firebase
   var ref = new Firebase("https://anti-bully.firebaseio.com");
