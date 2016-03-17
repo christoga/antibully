@@ -24,13 +24,11 @@ function submit() {
     // Input cannot be empty
     alert('Please insert input');
     return false;
-  }
-  else if (masalah.length < 50 ){
+  } else if (masalah.length < 50 ){
     // Textarea content cannot be less than 50
     alert('Please write a sentence more than 50 characters')
     return false;
-  }
-  else {
+  } else {
     // Log input value for testing
     console.log('Nama: ' + nama);
     console.log('Kepala Sekolah: ' + kepala_sekolah);
@@ -42,6 +40,7 @@ function submit() {
     console.log('Sekolah: ' + sekolah);
     console.log('Tingkat Sekolah: ' + tingkat_sekolah);
     console.log('Masalah: ' + masalah);
+
     // Send data to firebase
     ref.push().set({
       nama: nama,
@@ -55,6 +54,8 @@ function submit() {
       tingkat_sekolah: tingkat_sekolah,
       masalah: masalah
     });
+
+    // Friendly message
     alert('Terima kasih telah menjadi anti-bully hero. Kami akan menindaklanjuti laporanmu.');
     return true;
   }
